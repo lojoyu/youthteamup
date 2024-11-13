@@ -58,6 +58,9 @@
     width: 50%;
     height: calc( 100% + 2 * var(--img-dec-margin-top));
     /* bottom: 0; */
-    background-color: red;
+    /* background-color: red; */
     z-index: 1; /* 確保背景在 img 後面 */
+    background: 
+            linear-gradient(to top left, #FFFBE1,#FFB79B,rgba(255, 255, 255, 0), #FEFACB, #D7E9E5),
+            linear-gradient(to top right, #71AFEE, rgba(255, 255, 255, 0), #F97241) #FBE281;
 }
