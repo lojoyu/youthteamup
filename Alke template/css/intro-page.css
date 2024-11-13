@@ -1,6 +1,9 @@
+/* header */
 .cd-header.is-fixed {
     background-color: blue !important;
 }
+
+/* wave container */
 .color-container {
     position: relative;
     width: calc( 100% - 100px );
@@ -20,4 +23,41 @@
 }
 .wave path {
     fill: black;
+}
+
+/* image decoration */
+:root {
+    --img-dec-margin-left: 4%;
+    --img-dec-margin-top: 10%;
+}
+
+
+.img-wrap img {
+    position: relative !important;
+    width: calc( 100% - 2 * var(--img-dec-margin-left)) !important;
+    margin-left: var(--img-dec-margin-left);
+    margin-top: var(--img-dec-margin-top);
+    margin-bottom: var(--img-dec-margin-top);
+    z-index: 2 !important;
+}
+
+.img-wrap .watermark {
+    position: absolute !important;
+    width: 20% !important;
+    height: auto !important;
+    margin: 0;
+    bottom: calc( -1 * var(--img-dec-margin-top));
+    right: 0;
+    z-index: 3;
+}
+
+.img-background {
+    position: absolute;
+    top: calc( -1 * var(--img-dec-margin-top));
+    left: 0;
+    width: 50%;
+    height: calc( 100% + 2 * var(--img-dec-margin-top));
+    /* bottom: 0; */
+    background-color: red;
+    z-index: 1; /* 確保背景在 img 後面 */
 }
