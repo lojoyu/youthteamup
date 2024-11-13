@@ -1,0 +1,23 @@
+.cd-header.is-fixed {
+    background-color: blue !important;
+}
+.color-container {
+    position: relative;
+    width: calc( 100% - 100px );
+    overflow: hidden;
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.color-container .container {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.wave {
+    width: calc( 100% - 100px );
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.wave path {
+    fill: black;
+}
