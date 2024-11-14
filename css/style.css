@@ -364,14 +364,14 @@ a:hover {
 	position: absolute;
 	display:block;
 	left:0;
-	top: 40px;
+	top: 20px;
 	cursor: pointer;
 }
 .logo-wrap a {
 	cursor: pointer;
 }
 .logo-wrap img{
-	height:20px;
+	height:60px;
 	width:auto;
 	display:block;
 	cursor: pointer;
