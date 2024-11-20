@@ -99,9 +99,9 @@
 		</div>
 	
 		<div class="section padding-bottom over-hide background-blue">
-			<svg class="wave" viewBox="0 0 540 55">
-				<path class="cls-1" d="M0,46.93S24.05,27.64,81.71,28.12c45.8.38,61.26,14.58,107.86,18.81s60.37-11.65,108-8.47S341.31,48.22,389,51.4s59-24.25,97.15-23.75S540,58.82,540,58.82V81.88H0Z" transform="translate(0 -26)"/>
-			</svg>
+			<svg class="wave" viewBox="0 0 1831.07 212.71">
+				<path d="M1743.55,36.75c-51.11-5.06-104.78-1.46-156.05-7.36-55.03-6.33-108.57-23.99-163.92-26.15-37.68-1.47-75.21,4.28-112.65,8.71-124.11,14.68-249.95,14.91-374.11,.68C886.37,6.85,835.9-1.32,785.14,.18c-102.4,3.04-199.84,45.15-301.83,54.66-118.68,11.07-236.72-22.38-355.76-28.52-39.36-2.03-84.75,2.55-114.23,25.06-1.68,1.49-13.32,12.35-13.32,27.18V214.09H1831.07v-65.93c0-46.94-8.82-65.88-12.03-71.22-11.31-17.21-33.2-35.66-75.49-40.19Z"/>
+			  </svg>
 			<div class="color-container">
 				<div class="container">
 					<div class="row justify-content-center">
@@ -188,6 +188,15 @@
             $('#nav').load('./template/nav.html', function() {
                 //TODO：換 active class
                 //$('#nav__').addClass('active-nav')
+				// 假設需要在 href 中添加 'new-folder/' 層級
+				// $('#nav').find('a').each(function() {
+				// 	var $this = $(this);
+				// 	var currentHref = $this.attr('href');
+
+				// 	if (currentHref && !currentHref.startsWith('http')) {
+				// 		$this.attr('href', '../' + currentHref);
+				// 	}
+				// });
             });
             $('#letstalk').load('./template/letstalk.html');
             $('#footer').load('./template/footer.html');

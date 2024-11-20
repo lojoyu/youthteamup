@@ -40,7 +40,7 @@
 
 .img-wrap img {
     position: relative !important;
-    width: calc( 100% - 2 * var(--img-dec-margin-left)) !important;
+    width: calc( 100% - 4 * var(--img-dec-margin-left)) !important;
     margin-left: var(--img-dec-margin-left);
     margin-top: var(--img-dec-margin-top);
     margin-bottom: var(--img-dec-margin-top);
@@ -52,7 +52,7 @@
     width: 20% !important;
     height: auto !important;
     margin: 0;
-    bottom: calc( -1 * var(--img-dec-margin-top));
+    bottom: calc( -3 * var(--img-dec-margin-top));
     right: 0;
     z-index: 3;
 }
@@ -75,8 +75,8 @@
     background-color: blue;
 }
 
-.institute {
-    color: blue
+.color-container .institute {
+    font-size: 14px;
 }
 
 /*
@@ -95,4 +95,24 @@
 .color-container h6{
     font-size: 20px;
     padding-top: 20px;
+}
+
+#letstalk .background-blue{
+    margin: 10px;
+    width: calc( 100% - 20px );
+}
+
+#letstalk input {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 767.98px) {
+    .spaced-row td {
+      padding-bottom: 1rem;
+    }
+}
+
+.color-container table th, .color-container table tr {
+    vertical-align: top;
 }
