@@ -19,6 +19,8 @@
 .color-container .container {
     padding-top: 50px;
     padding-bottom: 50px;
+    font-size: 16px;
+    line-height: 2;
 }
 .wave {
     width: calc( 100% - 2 * var(--color-container-margin-left) );
@@ -89,3 +91,8 @@
 #FDEBEB
 #FFFBE1
 */
+
+.color-container h6{
+    font-size: 20px;
+    padding-top: 20px;
+}
