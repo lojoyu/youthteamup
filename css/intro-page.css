@@ -106,13 +106,128 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.mobile-show {
+    display: none;
+}
 
 @media (max-width: 767.98px) {
-    .spaced-row td {
+    .spaced-row .last-td {
       padding-bottom: 1rem;
     }
+    .spaced-row .mobile-hide {
+        display: none !important;
+    }
+    .spaced-row .mobile-show {
+        display: inline !important;
+    }
+    tr.spaced-row  {
+        display: block !important;
+    }
+    /* .spaced-row th, .spaced-row td {
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+    } */
 }
 
 .color-container table th, .color-container table tr {
     vertical-align: top;
+}
+
+table {
+    width: 100%;
+}
+
+td a{
+    color: #c4c3ca;
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
+}
+
+td a:hover{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+form button {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease; /* 底色變化動畫 */
+}
+/* 
+@keyframes background-color {
+    100% {
+        background-color: #0000FF;
+    }
+} */
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.checkmark {
+    text-align: center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(0);
+    animation: scale-up 0.3s ease-in-out forwards;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
