@@ -231,3 +231,14 @@ form button {
         transform: translateY(0);
     }
 }
+
+h6 a{
+    color: #c4c3ca;
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
+}
+
+h6 a:hover{
+    color: blue;
+    text-decoration-line: underline;
+}
