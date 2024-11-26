@@ -1130,7 +1130,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 	text-align: center;
 	font-weight: 400;
 	padding: 2px 0;
-	font-size: 13px;
+	font-size: 11px;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.07);	
 	transition: all 250ms linear;
@@ -2772,7 +2772,7 @@ figure.vimeo a img, figure.youtube a img {
 	top: 0;
 }
 .social-wrap ul{ 
-	top: -145px;
+	top: -105px;
 }
 .social-wrap.on-footer ul a{ 
 	background-color: rgba(32,32,32,32.8);

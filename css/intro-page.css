@@ -118,6 +118,7 @@
 .color-container h6{
     font-size: 20px;
     padding-top: 20px;
+    line-height: 2;
 }
 
 #letstalk .background-blue{
@@ -264,4 +265,13 @@ h6 a{
 h6 a:hover{
     color: blue;
     text-decoration-line: underline;
+}
+
+
+.quote {
+    font-size: 1.25rem;
+}
+
+.quote h6 {
+    padding: 0;
 }
