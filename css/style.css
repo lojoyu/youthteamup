@@ -2110,7 +2110,7 @@ figure.vimeo a img, figure.youtube a img {
 .cursor-shadow.active-blog-post-5,
 .cursor-shadow.active-blog-post-6,
 .cursor-shadow.active-blog-post-7 {
-	--size: 160px;
+	--size: 100px;
 	border-color: rgba(255,255,255, 0);
 	border-width: 0;
 	background-color: transparent;
@@ -2121,7 +2121,9 @@ figure.vimeo a img, figure.youtube a img {
 	z-index: 1;
 }
 .cursor-shadow.active-blog-post-1 {
-	background-image: url('../img/blog/1.jpg');
+	/* background-image: url('../img/blog/1.jpg'); */
+	opacity: 0.7;
+	background-image: url('../img/logo@2x.png');
 }
 .cursor-shadow.active-blog-post-2 {
 	background-image: url('../img/blog/2.jpg');
