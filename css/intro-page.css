@@ -275,3 +275,17 @@ h6 a:hover{
 .quote h6 {
     padding: 0;
 }
+
+/* .invalid-feedback {
+    color: #F97241
+} */
+
+/* 修改 Tooltip 的背景色和邊框 */
+/* 
+.tooltip-inner {
+    background: #F97241;
+}
+
+.tooltip .arrow::before {
+    border-right-color:  #F97241;
+} */

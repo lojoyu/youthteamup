@@ -14,16 +14,16 @@
 
 <div class="section background-blue">
     <div class="container">
-        <form class="row justify-content-center needs-validation">
+        <form id="emailform" class="row justify-content-center needs-validation" novalidate>
             <!-- <form> -->
                 <div class="col-md-6 text-center">
                     <p class="mb-0 pb-3">留下您的E-mail，接收最新一期「有事揪團」計畫資訊！</p>
                 </div>
                 <div class="col-md-8 ajax-form">
-                    <input id="email" class="cursor-link form-control" name="email" type="email" placeholder="相揪共創！" autocomplete="off" required/>
-                    <div class="invalid-feedback">
-                        Please choose a username.
-                    </div>
+                    <input id="email" class="cursor-link form-control" name="email" type="email" placeholder="相揪共創！" autocomplete="off" required data-toggle="tooltip" data-placement="top" title="請輸入有效的電子郵件地址！"/>
+                    <!-- <div id="emailvalidate" class="invalid-feedback text-center">
+                    請填入正確的 Email 格式
+                    </div> -->
                 </div>
                 <div class="section clearfix"></div>
                 <div class="col-md-4 mt-4 ajax-form text-center">

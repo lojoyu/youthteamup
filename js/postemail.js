@@ -1,5 +1,6 @@
 
 (function($) { "use strict";
+
     // $(".cursor-link-blog-post-1")
 	// .on("mouseenter", function() {	 
 	// $('.cursor').addClass("active-blog-post-1")	  
@@ -20,6 +21,35 @@
     })
     
     $(document).on('click', '#send', function (event) {
+        
+        $('[data-toggle="tooltip"]').each(function () {
+            const $this = $(this);
+            if (!$this.data('tooltipInstance')) {
+                const tooltipInstance = $this.tooltip({ trigger: 'manual' }).data('bs.tooltip');
+                $this.data('tooltipInstance', tooltipInstance);
+            }
+        });
+
+        var isValid = true;
+        const form = document.getElementById('emailform');
+
+        Array.from(form.elements).forEach(input => {
+
+            const tooltip = $(input).data('tooltipInstance');
+            if (input.type !== 'button') { // 排除按鈕
+                if (!input.checkValidity()) {
+                    tooltip.show();
+                    isValid = false;
+                } else {
+                    tooltip.hide();
+                }
+            }
+        });
+
+        if (!isValid) {
+            return;
+        } 
+
         verifying = true;
         $('.cursor').removeClass("active-blog-post-1")	
 
@@ -48,7 +78,6 @@
                 throw new Error(`HTTP 錯誤: ${response.status}`);
             }
         }).then((data) => {
-            console.log(data)
             if (data.result == 'success') {
                 // // sendButton.css('background-color', '#71AFEE'); 
                 // //linear-gradient(to top left, #FFFBE1,#FFB79B,#FEFACB, #D7E9E5),
