@@ -28,6 +28,7 @@
     line-height: 2;
 }
 .wave {
+    margin-bottom: -1px;
     width: calc( 100% - 2 * var(--color-container-margin-left) );
     margin-left: var(--color-container-margin-left);
     margin-right: var(--color-container-margin-left);
