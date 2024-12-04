@@ -562,7 +562,7 @@ a:hover {
 }
 .nav__list-item a:after{ 
 	position: absolute;
-	content: '';
+	/* content: ''; */
 	top: 50%;
 	left: -100%;
 	width: 100%;
