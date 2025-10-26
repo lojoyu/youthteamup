@@ -1,0 +1,292 @@
+/* header */
+.cd-header.is-fixed {
+    background-color: blue !important;
+}
+
+/* wave container */
+:root {
+    --color-container-margin-left: 30px;
+}
+
+.color-container .full-img {
+    width: calc( 100% + 4 * var(--color-container-margin-left) + 60px);
+    margin-left: calc( -2 * var(--color-container-margin-left) - 30px);
+}
+
+.color-container {
+    position: relative;
+    width: calc( 100% - 2 * var(--color-container-margin-left) );
+    overflow: hidden;
+    background-color: black;
+    margin-left: var(--color-container-margin-left);
+    margin-right: var(--color-container-margin-left);
+}
+.color-container .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 16px;
+    line-height: 2;
+}
+.wave {
+    margin-bottom: -1px;
+    width: calc( 100% - 2 * var(--color-container-margin-left) );
+    margin-left: var(--color-container-margin-left);
+    margin-right: var(--color-container-margin-left);
+}
+.wave path {
+    fill: black;
+}
+
+/* image decoration */
+:root {
+    --img-dec-margin-left: 2%;
+    --img-dec-margin-top: 4%;
+}
+
+.img-wrap-under img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767.98px) {
+    .img-background-under {
+        height: 10px;
+    }
+}
+.img-background-under{
+    width: 100%;
+    height: 20px;
+    background: 
+            linear-gradient(to left, #FFFBE1,#FFB79B,#FEFACB, #D7E9E5);
+            /* linear-gradient(to top right, #71AFEE, rgba(255, 255, 255, 0), #F97241) #FBE281; */
+}
+
+
+.img-wrap img {
+    position: relative !important;
+    width: calc( 100% - 4 * var(--img-dec-margin-left)) !important;
+    margin-left: var(--img-dec-margin-left);
+    margin-top: var(--img-dec-margin-top);
+    margin-bottom: var(--img-dec-margin-top);
+    z-index: 2 !important;
+}
+
+.img-wrap .watermark {
+    position: absolute !important;
+    width: 20% !important;
+    height: auto !important;
+    margin: 0;
+    bottom: calc( -3 * var(--img-dec-margin-top));
+    right: 0;
+    z-index: 3;
+}
+
+.img-background {
+    position: absolute;
+    top: calc( -1 * var(--img-dec-margin-top));
+    left: 0;
+    width: 50%;
+    height: calc( 100% + 2 * var(--img-dec-margin-top));
+    /* bottom: 0; */
+    /* background-color: red; */
+    z-index: 1; /* 確保背景在 img 後面 */
+    background: 
+            linear-gradient(to top left, #FFFBE1,#FFB79B,rgba(255, 255, 255, 0), #FEFACB, #D7E9E5),
+            linear-gradient(to top right, #71AFEE, rgba(255, 255, 255, 0), #F97241) #FBE281;
+}
+
+.color-container input {
+    background-color: blue;
+}
+
+.color-container .institute {
+    font-size: 14px;
+}
+
+/*
+#F97241
+#FF8641
+#FFAA5E
+#FBE281
+#D7E9E5
+#FEFACB
+#71AFEE
+#FFB79B
+#FDEBEB
+#FFFBE1
+*/
+
+.color-container h6{
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 2;
+}
+
+#letstalk .background-blue{
+    margin: 10px;
+    width: calc( 100% - 20px );
+}
+
+#letstalk input {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-show {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .spaced-row .last-td {
+      padding-bottom: 1rem;
+    }
+    .spaced-row .mobile-hide {
+        display: none !important;
+    }
+    .spaced-row .mobile-show {
+        display: inline !important;
+    }
+    tr.spaced-row  {
+        display: block !important;
+    }
+    /* .spaced-row th, .spaced-row td {
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+    } */
+}
+
+.color-container table th, .color-container table tr {
+    vertical-align: top;
+}
+
+table {
+    width: 100%;
+}
+
+td a{
+    color: #c4c3ca;
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
+}
+
+td a:hover{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+form button {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease; /* 底色變化動畫 */
+}
+/* 
+@keyframes background-color {
+    100% {
+        background-color: #0000FF;
+    }
+} */
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.checkmark {
+    text-align: center;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    transform: scale(0);
+    animation: scale-up 0.3s ease-in-out forwards;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h6 a{
+    color: #c4c3ca;
+    text-decoration-line: underline;
+    text-underline-offset: 0.3em;
+}
+
+h6 a:hover{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+
+.quote {
+    font-size: 1.25rem;
+}
+
+.quote h6 {
+    padding: 0;
+}
+
+/* .invalid-feedback {
+    color: #F97241
+} */
+
+/* 修改 Tooltip 的背景色和邊框 */
+/* 
+.tooltip-inner {
+    background: #F97241;
+}
+
+.tooltip .arrow::before {
+    border-right-color:  #F97241;
+} */
