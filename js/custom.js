@@ -114,9 +114,11 @@
 	function scrollBanner() {
 	  $(document).on('scroll', function(){
 		var scrollPos = $(this).scrollTop();
+		var topOpacity = scrollPos < 400 ? 1 : 1-((scrollPos-400)/400);
+
 		$('.parallax-fade-top').css({
 		  'top' : (scrollPos/2)+'px',
-		  'opacity' : 1-(scrollPos/300)
+		  'opacity' : topOpacity
 		});
 		$('.parallax-fade-top-pages').css({
 		  'top' : (scrollPos/2)+'px',
