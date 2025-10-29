@@ -68,6 +68,7 @@ body {
 
 #color-container .lead {
     font-weight: 600;
+    font-size: 17px;
 }
 
 #color-container div {
@@ -235,4 +236,12 @@ body {
     font-size: 1.3rem;
     top: 0;
     transform: translateY(-15%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--yellow);
 }
