@@ -101,7 +101,7 @@ body {
 
 #color-container #top-crew {
     /* position: absolute; */
-    width: 120%;
+    width: 100%;
     margin: auto;
     transform: translateY(-8%);
     z-index: 3;
