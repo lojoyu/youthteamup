@@ -38,7 +38,7 @@ body {
 #top-container .col-12 {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #banner-top {
@@ -56,7 +56,7 @@ body {
     background-repeat: no-repeat;
     right: 0;
     top: 0;
-    transform: translate(50%, -30%);
+    transform: translate(50%, -15%);
 }
 
 #banner-top-word {
@@ -95,7 +95,7 @@ body {
 
 #color-container #top-crew {
     /* position: absolute; */
-    width: 80%;
+    width: 120%;
     margin: auto;
     transform: translateY(-8%);
     z-index: 3;
@@ -113,6 +113,7 @@ body {
     color: white;
     line-height: 1.8;
     font-size: 14px;
+    font-weight: 400;
 }
 
 #color-container h6 {
