@@ -3,11 +3,21 @@
     --yellow: #F7E921;
 }
 
+/* * {
+    cursor: url("../img/web_-arrow.png") 17 17, auto !important;	
+} */
+
 /* header */
 .cd-header.is-fixed {
     /* background-color: rgba(0,0,0,0); */
 }
 
+.nav__list-item {
+    font-size: 3vh !important;
+}
+.nav__list-item.nav__mt {
+    margin-top: 10rem;
+}
 
 .half-blue-background {
     background-color: var(--blue);
@@ -29,11 +39,24 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin-top: 100px;
-
 }
 
 #banner-top {
     width: 100%;
+}
+
+#banner::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: auto;
+    background-image: url("../img/web_star_02.png");
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -30%);
 }
 
 #banner-top-word {
@@ -55,12 +78,27 @@ body {
     right: 0;
 }
 
+.section:has(#color-container)::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: auto;
+    background-image: url("../img/web_star_01.png");
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+
 
 #color-container #top-crew {
     /* position: absolute; */
     width: 80%;
     margin: auto;
     transform: translateY(-8%);
+    z-index: 3;
 }
 
 
@@ -191,7 +229,8 @@ body {
     left: 50%;
     width: 15%;
     background-image: url("../img/web-11.png");
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 50%);
+    /* aspect-ratio: 243/129; */
 }
 
 

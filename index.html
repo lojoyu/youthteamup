@@ -298,8 +298,8 @@
 	<!-- Page cursor
 	================================================== -->
 	
-	<div class="cursor cursor-shadow"></div>
-	<div class="cursor cursor-dot"></div>
+	<!-- <div class="cursor cursor-shadow"></div>
+	<div class="cursor cursor-dot"></div> -->
 
 
 	</div>
@@ -319,8 +319,6 @@
     <script>
         $(function() {
             $('#nav').load('./template/nav.html', function() {
-                //TODO：換 active class
-                //$('#nav__').addClass('active-nav')
                 $('#nav').find('a').each(function() {
                  	var $this = $(this);
                  	var currentHref = $this.attr('href');
@@ -330,7 +328,7 @@
                  	}
                 });
             });
-            $('#letstalk').load('./template/letstalk.html');
+            //$('#letstalk').load('./template/letstalk.html');
             $('#footer').load('./template/footer.html');
         });
     </script> 

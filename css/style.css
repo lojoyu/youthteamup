@@ -314,7 +314,7 @@ mark{
 ================================================== */
 
 * {
-	cursor: none;
+	/* cursor: none; */
 }
 .cursor {
 	--size: 6px;
@@ -325,6 +325,7 @@ mark{
 	z-index: 10000;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
+	/* cursor: url("../img/web_-arrow.png"), auto !important;	 */
 }
 .cursor.cursor-shadow {
 	background-color: transparent;
