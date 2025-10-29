@@ -62,8 +62,8 @@ body {
 #banner-top-word {
     height: 100%;
     position:absolute;
-    top: 0;
-    left: -20px;
+    top: 6%;
+    left: -22px;
 }
 
 @media (max-width: 767.98px) {
