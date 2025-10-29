@@ -63,7 +63,13 @@ body {
     height: 100%;
     position:absolute;
     top: 0;
-    left: -22px;
+    left: -20px;
+}
+
+@media (max-width: 767.98px) {
+    #banner-top-word {
+        left: 0;
+    }
 }
 
 #color-container {
