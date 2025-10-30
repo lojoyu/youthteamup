@@ -10,7 +10,7 @@
 #left-star {
     position: fixed;
     left: 0; 
-    width: 25%;
+    width: 20%;
     z-index: 10;
     bottom: 0;
     transform: translateY(20%);
@@ -20,7 +20,7 @@
     position: fixed;
     right: 0; 
     top: 0;
-    width: 30%;
+    width: 25%;
     z-index: 10;
     transform: translate(10%, -10%);
 
