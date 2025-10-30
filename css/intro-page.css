@@ -7,6 +7,25 @@
     cursor: url("../img/web_-arrow.png") 17 17, auto !important;	
 } */
 
+#left-star {
+    position: fixed;
+    left: 0; 
+    width: 25%;
+    z-index: 10;
+    bottom: 0;
+    transform: translateY(20%);
+}
+
+#right-star {
+    position: fixed;
+    right: 0; 
+    top: 0;
+    width: 30%;
+    z-index: 10;
+    transform: translate(10%, -10%);
+
+}
+
 /* header */
 .cd-header.is-fixed {
     /* background-color: rgba(0,0,0,0); */
@@ -44,7 +63,7 @@ body {
 #banner-top {
     width: 100%;
 }
-
+/* 
 #banner::after {
     content: "";
     position: absolute;
@@ -57,7 +76,7 @@ body {
     right: 0;
     top: 0;
     transform: translate(50%, -15%);
-}
+} */
 
 #banner-top-word {
     height: 100%;
@@ -84,7 +103,7 @@ body {
     right: 0;
 }
 
-.section:has(#color-container)::after {
+/* .section:has(#color-container)::after {
     content: "";
     position: absolute;
     width: 35%;
@@ -96,14 +115,14 @@ body {
     left: 0;
     top: 0;
     transform: translateY(-50%);
-}
+} */
 
 
 #color-container #top-crew {
     /* position: absolute; */
-    width: 100%;
+    width: 110%;
     margin: auto;
-    transform: translateY(-8%);
+    transform: translateY(-35%);
     z-index: 3;
 }
 
