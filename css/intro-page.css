@@ -291,17 +291,17 @@ body {
     padding-left: 1rem;
 }
 .credit-name li {
-    list-style-type: none;
+    /* list-style-type: none; */
     position: relative;
 }
-.credit-name li::before {
+/* .credit-name li::before {
     content: "●";
     position: absolute;
     left: -1.1rem;
     font-size: 1.3rem;
     top: 0;
     transform: translateY(-15%);
-}
+} */
 
 a {
     color: white;
