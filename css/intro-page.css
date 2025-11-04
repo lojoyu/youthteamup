@@ -305,9 +305,18 @@ body {
 } */
 
 a {
+    position: relative;
     color: white;
     text-decoration: none;
 }
-a:hover {
+a:hover, a:hover::after {
     color: var(--yellow);
 }
+/* a::after {
+    content: "⇀";
+    color: white;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 0.2rem;
+} */
