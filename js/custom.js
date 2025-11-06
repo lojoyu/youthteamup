@@ -78,6 +78,20 @@
 	/* Scroll Animation */
 	
 	window.scrollReveal = new scrollReveal();
+	
+	const vlines = document.querySelectorAll('.vertical-line');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '-15% 0px -15% 0px' // 進畫面 80% 才觸發
+    });
+
+    vlines.forEach(vline => observer.observe(vline));
 
 	
 	//Navigation
